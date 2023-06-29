@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FC3E5BA22A4D37CF00B870F5 /* RoamXTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3E5BA12A4D37CF00B870F5 /* RoamXTests.swift */; };
 		FC7AA7572A4CB01900ED8D44 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7AA7562A4CB01900ED8D44 /* AppDelegate.swift */; };
 		FC7AA7592A4CB01900ED8D44 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7AA7582A4CB01900ED8D44 /* SceneDelegate.swift */; };
 		FC7AA75B2A4CB01900ED8D44 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7AA75A2A4CB01900ED8D44 /* ViewController.swift */; };
@@ -15,7 +16,20 @@
 		FC7AA7632A4CB01B00ED8D44 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC7AA7612A4CB01B00ED8D44 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		FC3E5BA32A4D37CF00B870F5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FC7AA74B2A4CB01900ED8D44 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FC7AA7522A4CB01900ED8D44;
+			remoteInfo = RoamX;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		FC3E5B9F2A4D37CF00B870F5 /* RoamXTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RoamXTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC3E5BA12A4D37CF00B870F5 /* RoamXTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoamXTests.swift; sourceTree = "<group>"; };
+		FC3E5BA82A4D382C00B870F5 /* Unit Tests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; name = "Unit Tests.xctestplan"; path = "RoamXTests/Unit Tests.xctestplan"; sourceTree = "<group>"; };
 		FC7AA7532A4CB01900ED8D44 /* RoamX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RoamX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC7AA7562A4CB01900ED8D44 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FC7AA7582A4CB01900ED8D44 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -27,6 +41,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		FC3E5B9C2A4D37CF00B870F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FC7AA7502A4CB01900ED8D44 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -37,10 +58,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FC3E5BA02A4D37CF00B870F5 /* RoamXTests */ = {
+			isa = PBXGroup;
+			children = (
+				FC3E5BA12A4D37CF00B870F5 /* RoamXTests.swift */,
+			);
+			path = RoamXTests;
+			sourceTree = "<group>";
+		};
 		FC7AA74A2A4CB01900ED8D44 = {
 			isa = PBXGroup;
 			children = (
+				FC3E5BA82A4D382C00B870F5 /* Unit Tests.xctestplan */,
 				FC7AA7552A4CB01900ED8D44 /* RoamX */,
+				FC3E5BA02A4D37CF00B870F5 /* RoamXTests */,
 				FC7AA7542A4CB01900ED8D44 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				FC7AA7532A4CB01900ED8D44 /* RoamX.app */,
+				FC3E5B9F2A4D37CF00B870F5 /* RoamXTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -70,6 +102,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		FC3E5B9E2A4D37CF00B870F5 /* RoamXTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC3E5BA72A4D37CF00B870F5 /* Build configuration list for PBXNativeTarget "RoamXTests" */;
+			buildPhases = (
+				FC3E5B9B2A4D37CF00B870F5 /* Sources */,
+				FC3E5B9C2A4D37CF00B870F5 /* Frameworks */,
+				FC3E5B9D2A4D37CF00B870F5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FC3E5BA42A4D37CF00B870F5 /* PBXTargetDependency */,
+			);
+			name = RoamXTests;
+			productName = RoamXTests;
+			productReference = FC3E5B9F2A4D37CF00B870F5 /* RoamXTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		FC7AA7522A4CB01900ED8D44 /* RoamX */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = FC7AA7672A4CB01B00ED8D44 /* Build configuration list for PBXNativeTarget "RoamX" */;
@@ -97,6 +147,10 @@
 				LastSwiftUpdateCheck = 1420;
 				LastUpgradeCheck = 1420;
 				TargetAttributes = {
+					FC3E5B9E2A4D37CF00B870F5 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = FC7AA7522A4CB01900ED8D44;
+					};
 					FC7AA7522A4CB01900ED8D44 = {
 						CreatedOnToolsVersion = 14.2;
 					};
@@ -116,11 +170,19 @@
 			projectRoot = "";
 			targets = (
 				FC7AA7522A4CB01900ED8D44 /* RoamX */,
+				FC3E5B9E2A4D37CF00B870F5 /* RoamXTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		FC3E5B9D2A4D37CF00B870F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FC7AA7512A4CB01900ED8D44 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -134,6 +196,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		FC3E5B9B2A4D37CF00B870F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC3E5BA22A4D37CF00B870F5 /* RoamXTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FC7AA74F2A4CB01900ED8D44 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -145,6 +215,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FC3E5BA42A4D37CF00B870F5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FC7AA7522A4CB01900ED8D44 /* RoamX */;
+			targetProxy = FC3E5BA32A4D37CF00B870F5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		FC7AA75C2A4CB01900ED8D44 /* Main.storyboard */ = {
@@ -166,6 +244,42 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		FC3E5BA52A4D37CF00B870F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 332VV78KMG;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.cgraham.RoamXTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RoamX.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RoamX";
+			};
+			name = Debug;
+		};
+		FC3E5BA62A4D37CF00B870F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 332VV78KMG;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.cgraham.RoamXTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RoamX.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RoamX";
+			};
+			name = Release;
+		};
 		FC7AA7652A4CB01B00ED8D44 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -339,6 +453,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		FC3E5BA72A4D37CF00B870F5 /* Build configuration list for PBXNativeTarget "RoamXTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC3E5BA52A4D37CF00B870F5 /* Debug */,
+				FC3E5BA62A4D37CF00B870F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		FC7AA74E2A4CB01900ED8D44 /* Build configuration list for PBXProject "RoamX" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

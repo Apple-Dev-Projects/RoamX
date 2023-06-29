@@ -1,0 +1,30 @@
+{
+  "configurations" : [
+    {
+      "id" : "B533F719-70FD-49BD-BC63-209E91FF7F33",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "codeCoverage" : false,
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:RoamX.xcodeproj",
+      "identifier" : "FC7AA7522A4CB01900ED8D44",
+      "name" : "RoamX"
+    }
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:RoamX.xcodeproj",
+        "identifier" : "FC3E5B9E2A4D37CF00B870F5",
+        "name" : "RoamXTests"
+      }
+    }
+  ],
+  "version" : 1
+}

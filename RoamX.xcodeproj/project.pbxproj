@@ -12,6 +12,17 @@
 		FCB02E892A548FD300C3EACC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCB02E882A548FD300C3EACC /* Assets.xcassets */; };
 		FCB02E8C2A548FD300C3EACC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCB02E8B2A548FD300C3EACC /* Preview Assets.xcassets */; };
 		FCB02E992A54905900C3EACC /* RoamXTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB02E982A54905900C3EACC /* RoamXTests.swift */; };
+		FCB02EA32A54A67F00C3EACC /* UIColor+RoamX.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB02EA22A54A67F00C3EACC /* UIColor+RoamX.swift */; };
+		FCB02ED22A54C5F000C3EACC /* LogoMonochromeLight.svg in Resources */ = {isa = PBXBuildFile; fileRef = FCB02EC82A54C5EF00C3EACC /* LogoMonochromeLight.svg */; };
+		FCB02ED32A54C5F000C3EACC /* AppIcon1024@1x.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FCB02EC92A54C5EF00C3EACC /* AppIcon1024@1x.jpeg */; };
+		FCB02ED42A54C5F000C3EACC /* LogoFillGrayscaleWhite.svg in Resources */ = {isa = PBXBuildFile; fileRef = FCB02ECA2A54C5EF00C3EACC /* LogoFillGrayscaleWhite.svg */; };
+		FCB02ED52A54C5F000C3EACC /* LogoFillMonochromeDark.svg in Resources */ = {isa = PBXBuildFile; fileRef = FCB02ECB2A54C5EF00C3EACC /* LogoFillMonochromeDark.svg */; };
+		FCB02ED62A54C5F000C3EACC /* LogoFillMultiColor.svg in Resources */ = {isa = PBXBuildFile; fileRef = FCB02ECC2A54C5EF00C3EACC /* LogoFillMultiColor.svg */; };
+		FCB02ED72A54C5F000C3EACC /* LogoGrayscaleWhite.svg in Resources */ = {isa = PBXBuildFile; fileRef = FCB02ECD2A54C5EF00C3EACC /* LogoGrayscaleWhite.svg */; };
+		FCB02ED82A54C5F000C3EACC /* LogoMonochromeDark.svg in Resources */ = {isa = PBXBuildFile; fileRef = FCB02ECE2A54C5EF00C3EACC /* LogoMonochromeDark.svg */; };
+		FCB02ED92A54C5F000C3EACC /* LogoFillGrayscaleBlack.svg in Resources */ = {isa = PBXBuildFile; fileRef = FCB02ECF2A54C5EF00C3EACC /* LogoFillGrayscaleBlack.svg */; };
+		FCB02EDA2A54C5F000C3EACC /* LogoFillMonochromeLight.svg in Resources */ = {isa = PBXBuildFile; fileRef = FCB02ED02A54C5EF00C3EACC /* LogoFillMonochromeLight.svg */; };
+		FCB02EDB2A54C5F000C3EACC /* LogoGrayscaleBlack.svg in Resources */ = {isa = PBXBuildFile; fileRef = FCB02ED12A54C5EF00C3EACC /* LogoGrayscaleBlack.svg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,7 +43,18 @@
 		FCB02E8B2A548FD300C3EACC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FCB02E962A54905900C3EACC /* RoamXTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RoamXTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCB02E982A54905900C3EACC /* RoamXTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoamXTests.swift; sourceTree = "<group>"; };
-		FCB02E9F2A54911300C3EACC /* Unit Tests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Unit Tests.xctestplan"; path = "RoamX/Unit Tests.xctestplan"; sourceTree = SOURCE_ROOT; };
+		FCB02E9F2A54911300C3EACC /* Unit Tests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; name = "Unit Tests.xctestplan"; path = "RoamX/Unit Tests.xctestplan"; sourceTree = SOURCE_ROOT; };
+		FCB02EA22A54A67F00C3EACC /* UIColor+RoamX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+RoamX.swift"; sourceTree = "<group>"; };
+		FCB02EC82A54C5EF00C3EACC /* LogoMonochromeLight.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = LogoMonochromeLight.svg; sourceTree = "<group>"; };
+		FCB02EC92A54C5EF00C3EACC /* AppIcon1024@1x.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "AppIcon1024@1x.jpeg"; sourceTree = "<group>"; };
+		FCB02ECA2A54C5EF00C3EACC /* LogoFillGrayscaleWhite.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LogoFillGrayscaleWhite.svg; sourceTree = "<group>"; };
+		FCB02ECB2A54C5EF00C3EACC /* LogoFillMonochromeDark.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LogoFillMonochromeDark.svg; sourceTree = "<group>"; };
+		FCB02ECC2A54C5EF00C3EACC /* LogoFillMultiColor.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LogoFillMultiColor.svg; sourceTree = "<group>"; };
+		FCB02ECD2A54C5EF00C3EACC /* LogoGrayscaleWhite.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = LogoGrayscaleWhite.svg; sourceTree = "<group>"; };
+		FCB02ECE2A54C5EF00C3EACC /* LogoMonochromeDark.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = LogoMonochromeDark.svg; sourceTree = "<group>"; };
+		FCB02ECF2A54C5EF00C3EACC /* LogoFillGrayscaleBlack.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LogoFillGrayscaleBlack.svg; sourceTree = "<group>"; };
+		FCB02ED02A54C5EF00C3EACC /* LogoFillMonochromeLight.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LogoFillMonochromeLight.svg; sourceTree = "<group>"; };
+		FCB02ED12A54C5EF00C3EACC /* LogoGrayscaleBlack.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = LogoGrayscaleBlack.svg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +78,10 @@
 		FCB02E782A548FD000C3EACC = {
 			isa = PBXGroup;
 			children = (
-				FCB02E822A548FD000C3EACC /* Products */,
 				FCB02E832A548FD000C3EACC /* RoamX */,
 				FCB02E972A54905900C3EACC /* RoamXTests */,
+				FCB02E822A548FD000C3EACC /* Products */,
+				FCB02EA52A54B1BF00C3EACC /* Resources */,
 			);
 			sourceTree = "<group>";
 		};
@@ -75,7 +98,8 @@
 			isa = PBXGroup;
 			children = (
 				FCB02E842A548FD000C3EACC /* RoamXApp.swift */,
-				FCB02E862A548FD000C3EACC /* ContentView.swift */,
+				FCB02EA02A54A64100C3EACC /* Models */,
+				FCB02EA12A54A64C00C3EACC /* Views */,
 				FCB02E882A548FD300C3EACC /* Assets.xcassets */,
 				FCB02E8A2A548FD300C3EACC /* Preview Content */,
 			);
@@ -97,6 +121,39 @@
 				FCB02E982A54905900C3EACC /* RoamXTests.swift */,
 			);
 			path = RoamXTests;
+			sourceTree = "<group>";
+		};
+		FCB02EA02A54A64100C3EACC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FCB02EA22A54A67F00C3EACC /* UIColor+RoamX.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FCB02EA12A54A64C00C3EACC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FCB02E862A548FD000C3EACC /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FCB02EA52A54B1BF00C3EACC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FCB02EC92A54C5EF00C3EACC /* AppIcon1024@1x.jpeg */,
+				FCB02ECF2A54C5EF00C3EACC /* LogoFillGrayscaleBlack.svg */,
+				FCB02ECA2A54C5EF00C3EACC /* LogoFillGrayscaleWhite.svg */,
+				FCB02ECB2A54C5EF00C3EACC /* LogoFillMonochromeDark.svg */,
+				FCB02ED02A54C5EF00C3EACC /* LogoFillMonochromeLight.svg */,
+				FCB02ECC2A54C5EF00C3EACC /* LogoFillMultiColor.svg */,
+				FCB02ED12A54C5EF00C3EACC /* LogoGrayscaleBlack.svg */,
+				FCB02ECD2A54C5EF00C3EACC /* LogoGrayscaleWhite.svg */,
+				FCB02ECE2A54C5EF00C3EACC /* LogoMonochromeDark.svg */,
+				FCB02EC82A54C5EF00C3EACC /* LogoMonochromeLight.svg */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,8 +237,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCB02ED22A54C5F000C3EACC /* LogoMonochromeLight.svg in Resources */,
+				FCB02EDB2A54C5F000C3EACC /* LogoGrayscaleBlack.svg in Resources */,
+				FCB02ED72A54C5F000C3EACC /* LogoGrayscaleWhite.svg in Resources */,
+				FCB02ED92A54C5F000C3EACC /* LogoFillGrayscaleBlack.svg in Resources */,
+				FCB02ED32A54C5F000C3EACC /* AppIcon1024@1x.jpeg in Resources */,
+				FCB02ED42A54C5F000C3EACC /* LogoFillGrayscaleWhite.svg in Resources */,
 				FCB02E8C2A548FD300C3EACC /* Preview Assets.xcassets in Resources */,
 				FCB02E892A548FD300C3EACC /* Assets.xcassets in Resources */,
+				FCB02ED62A54C5F000C3EACC /* LogoFillMultiColor.svg in Resources */,
+				FCB02ED52A54C5F000C3EACC /* LogoFillMonochromeDark.svg in Resources */,
+				FCB02EDA2A54C5F000C3EACC /* LogoFillMonochromeLight.svg in Resources */,
+				FCB02ED82A54C5F000C3EACC /* LogoMonochromeDark.svg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,6 +268,7 @@
 			files = (
 				FCB02E872A548FD000C3EACC /* ContentView.swift in Sources */,
 				FCB02E852A548FD000C3EACC /* RoamXApp.swift in Sources */,
+				FCB02EA32A54A67F00C3EACC /* UIColor+RoamX.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

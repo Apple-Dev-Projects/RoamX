@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+/// The RoamX app and main window group scene.
 @main
 struct RoamXApp: App {
     var body: some Scene {

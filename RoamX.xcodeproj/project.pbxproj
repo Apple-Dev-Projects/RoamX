@@ -98,9 +98,13 @@
 			isa = PBXGroup;
 			children = (
 				FCB02E842A548FD000C3EACC /* RoamXApp.swift */,
+				FCD1183F2A565C0000133AE6 /* Extensions */,
+				FCD118402A565C0F00133AE6 /* Utilities */,
+				FCD118412A565C2700133AE6 /* Services */,
 				FCB02EA02A54A64100C3EACC /* Models */,
-				FCB02EA12A54A64C00C3EACC /* Views */,
+				FCD1183C2A565B6D00133AE6 /* Core */,
 				FCB02E882A548FD300C3EACC /* Assets.xcassets */,
+				FCB02EA12A54A64C00C3EACC /* Demo */,
 				FCB02E8A2A548FD300C3EACC /* Preview Content */,
 			);
 			path = RoamX;
@@ -126,17 +130,16 @@
 		FCB02EA02A54A64100C3EACC /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				FCB02EA22A54A67F00C3EACC /* Color+RoamX.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
 		};
-		FCB02EA12A54A64C00C3EACC /* Views */ = {
+		FCB02EA12A54A64C00C3EACC /* Demo */ = {
 			isa = PBXGroup;
 			children = (
 				FCB02E862A548FD000C3EACC /* DemoView.swift */,
 			);
-			path = Views;
+			path = Demo;
 			sourceTree = "<group>";
 		};
 		FCB02EA52A54B1BF00C3EACC /* Resources */ = {
@@ -154,6 +157,51 @@
 				FCB02EC82A54C5EF00C3EACC /* LogoMonochromeLight.svg */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		FCD1183C2A565B6D00133AE6 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				FCD1183D2A565BD300133AE6 /* Components */,
+				FCD1183E2A565BDB00133AE6 /* Launch */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		FCD1183D2A565BD300133AE6 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		FCD1183E2A565BDB00133AE6 /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
+		FCD1183F2A565C0000133AE6 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FCB02EA22A54A67F00C3EACC /* Color+RoamX.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		FCD118402A565C0F00133AE6 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		FCD118412A565C2700133AE6 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

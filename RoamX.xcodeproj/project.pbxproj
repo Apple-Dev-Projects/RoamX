@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		FCB02E852A548FD000C3EACC /* RoamXApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB02E842A548FD000C3EACC /* RoamXApp.swift */; };
-		FCB02E872A548FD000C3EACC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB02E862A548FD000C3EACC /* ContentView.swift */; };
+		FCB02E872A548FD000C3EACC /* DemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB02E862A548FD000C3EACC /* DemoView.swift */; };
 		FCB02E892A548FD300C3EACC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCB02E882A548FD300C3EACC /* Assets.xcassets */; };
 		FCB02E8C2A548FD300C3EACC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCB02E8B2A548FD300C3EACC /* Preview Assets.xcassets */; };
 		FCB02E992A54905900C3EACC /* RoamXTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB02E982A54905900C3EACC /* RoamXTests.swift */; };
-		FCB02EA32A54A67F00C3EACC /* UIColor+RoamX.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB02EA22A54A67F00C3EACC /* UIColor+RoamX.swift */; };
+		FCB02EA32A54A67F00C3EACC /* Color+RoamX.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB02EA22A54A67F00C3EACC /* Color+RoamX.swift */; };
 		FCB02ED22A54C5F000C3EACC /* LogoMonochromeLight.svg in Resources */ = {isa = PBXBuildFile; fileRef = FCB02EC82A54C5EF00C3EACC /* LogoMonochromeLight.svg */; };
 		FCB02ED32A54C5F000C3EACC /* AppIcon1024@1x.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FCB02EC92A54C5EF00C3EACC /* AppIcon1024@1x.jpeg */; };
 		FCB02ED42A54C5F000C3EACC /* LogoFillGrayscaleWhite.svg in Resources */ = {isa = PBXBuildFile; fileRef = FCB02ECA2A54C5EF00C3EACC /* LogoFillGrayscaleWhite.svg */; };
@@ -38,13 +38,13 @@
 /* Begin PBXFileReference section */
 		FCB02E812A548FD000C3EACC /* RoamX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RoamX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCB02E842A548FD000C3EACC /* RoamXApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoamXApp.swift; sourceTree = "<group>"; };
-		FCB02E862A548FD000C3EACC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FCB02E862A548FD000C3EACC /* DemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoView.swift; sourceTree = "<group>"; };
 		FCB02E882A548FD300C3EACC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FCB02E8B2A548FD300C3EACC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FCB02E962A54905900C3EACC /* RoamXTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RoamXTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCB02E982A54905900C3EACC /* RoamXTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoamXTests.swift; sourceTree = "<group>"; };
 		FCB02E9F2A54911300C3EACC /* Unit Tests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; name = "Unit Tests.xctestplan"; path = "RoamX/Unit Tests.xctestplan"; sourceTree = SOURCE_ROOT; };
-		FCB02EA22A54A67F00C3EACC /* UIColor+RoamX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+RoamX.swift"; sourceTree = "<group>"; };
+		FCB02EA22A54A67F00C3EACC /* Color+RoamX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+RoamX.swift"; sourceTree = "<group>"; };
 		FCB02EC82A54C5EF00C3EACC /* LogoMonochromeLight.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = LogoMonochromeLight.svg; sourceTree = "<group>"; };
 		FCB02EC92A54C5EF00C3EACC /* AppIcon1024@1x.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "AppIcon1024@1x.jpeg"; sourceTree = "<group>"; };
 		FCB02ECA2A54C5EF00C3EACC /* LogoFillGrayscaleWhite.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LogoFillGrayscaleWhite.svg; sourceTree = "<group>"; };
@@ -126,7 +126,7 @@
 		FCB02EA02A54A64100C3EACC /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				FCB02EA22A54A67F00C3EACC /* UIColor+RoamX.swift */,
+				FCB02EA22A54A67F00C3EACC /* Color+RoamX.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -134,7 +134,7 @@
 		FCB02EA12A54A64C00C3EACC /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				FCB02E862A548FD000C3EACC /* ContentView.swift */,
+				FCB02E862A548FD000C3EACC /* DemoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -266,9 +266,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FCB02E872A548FD000C3EACC /* ContentView.swift in Sources */,
+				FCB02E872A548FD000C3EACC /* DemoView.swift in Sources */,
 				FCB02E852A548FD000C3EACC /* RoamXApp.swift in Sources */,
-				FCB02EA32A54A67F00C3EACC /* UIColor+RoamX.swift in Sources */,
+				FCB02EA32A54A67F00C3EACC /* Color+RoamX.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

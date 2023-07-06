@@ -12,7 +12,7 @@ import SwiftUI
 struct RoamXApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            DemoView()
         }
     }
 }

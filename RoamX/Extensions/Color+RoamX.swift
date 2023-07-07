@@ -15,13 +15,18 @@ extension Color {
 
 /// The color theme to use for the RoamX application launch screen.
 struct LaunchTheme {
-    // TODO
+    /// A color that reflects the accent color of the RoamX application during launch.
+    let accent = Color("LaunchAccentColor")
+    /// The color for the main background of the RoamX launch screen.
+    let background = Color("LaunchBackgroundColor")
 }
 
 /// The color theme to use for thr RoamX application main interface.
 struct MainTheme {
+    /// A color that reflects the accent color of the RoamX interface.
+    let accent = Color("MainAccentColor")
     /// The color for the main background of the RoamX interface.
-    let background = Color("MainBackground")
+    let background = Color("MainBackgroundColor")
     /// The color for content layered on top of the RoamX main background.
-    let secondaryBackground = Color("MainSecondaryBackground")
+    let secondaryBackground = Color("MainSecondaryBackgroundColor")
 }

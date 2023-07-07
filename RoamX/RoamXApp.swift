@@ -16,14 +16,13 @@ struct RoamXApp: App {
         WindowGroup {
             ZStack {
                 DemoView()
+                    .zIndex(1)
                 
-                ZStack {
-                    if (launchScreenManager.state != .finished) {
-                        LaunchView()
-                            .transition(.push(from: .trailing))
-                    }
+                if (launchScreenManager.state != .finished) {
+                    LaunchView()
+                        .transition(.push(from: .trailing))
+                        .zIndex(2)
                 }
-                .zIndex(2.0)
             }
             .environmentObject(launchScreenManager)
         }

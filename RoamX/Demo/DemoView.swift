@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct DemoView: View {
+    @EnvironmentObject private var launchScreenManager: LaunchScreenStateManager
+    
     var body: some View {
         NavigationStack {
             ZStack {
@@ -16,6 +18,15 @@ struct DemoView: View {
             }
             DemoListView()
         }
+        .task {
+            try? await getDataFromApi()
+            try? await Task.sleep(for: Duration.seconds(1))
+            launchScreenManager.setReadyToDismis()
+        }
+    }
+    
+    fileprivate func getDataFromApi() async throws {
+        try? await Task.sleep(for: Duration.seconds(1))
     }
 }
 
@@ -138,5 +149,6 @@ struct DemoDetailView: View {
 struct DemoView_Previews: PreviewProvider {
     static var previews: some View {
         DemoView()
+            .environmentObject(LaunchScreenStateManager())
     }
 }

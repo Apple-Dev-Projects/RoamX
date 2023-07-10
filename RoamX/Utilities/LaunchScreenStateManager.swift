@@ -11,7 +11,7 @@ import SwiftUI
 @MainActor
 final class LaunchScreenStateManager: ObservableObject {
     @Published private(set) var state: LaunchScreenState = .initialized
-    @Published private var animationsFinished = false
+    @Published private(set) var animationsFinished = false
     @Published private var readyToDismiss = false
     
     var canDismiss: Bool {
@@ -19,18 +19,22 @@ final class LaunchScreenStateManager: ObservableObject {
     }
     
     func advanceState() {
-        switch state {
-        case .initialized:
-            state = .taglineAnimation
-        case .taglineAnimation:
-            animationsFinished = true
-        case .finished:
-            break
+        withAnimation(.easeInOut) {
+            switch state {
+            case .initialized:
+                state = .taglineAnimation
+            case .taglineAnimation:
+                animationsFinished = true
+            case .finished:
+                break
+            }
         }
     }
     
     func setReadyToDismis() {
-        readyToDismiss = true
+        withAnimation(.easeOut) {
+            readyToDismiss = true
+        }
     }
     
     func dismiss() {
@@ -38,7 +42,7 @@ final class LaunchScreenStateManager: ObservableObject {
             try? await Task.sleep(for: Duration.seconds(1))
         }
         
-        withAnimation(.easeOut(duration: 0.75)) {
+        withAnimation(.easeOut) {
             state = .finished
         }
     }

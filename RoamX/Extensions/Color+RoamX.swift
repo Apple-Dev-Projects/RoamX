@@ -19,6 +19,8 @@ struct LaunchTheme {
     let accent = Color("LaunchAccentColor")
     /// The color for the main background of the RoamX launch screen.
     let background = Color("LaunchBackgroundColor")
+    /// The color for the progress indicator of the RoamX launch screen.
+    let progress = Color("LaunchProgressColor")
 }
 
 /// The color theme to use for thr RoamX application main interface.

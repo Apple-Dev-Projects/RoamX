@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FCA65A252A5B7F36000F628F /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA65A242A5B7F36000F628F /* RootView.swift */; };
 		FCB02E852A548FD000C3EACC /* RoamXApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB02E842A548FD000C3EACC /* RoamXApp.swift */; };
 		FCB02E872A548FD000C3EACC /* DemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB02E862A548FD000C3EACC /* DemoView.swift */; };
 		FCB02E892A548FD300C3EACC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCB02E882A548FD300C3EACC /* Assets.xcassets */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FCA65A242A5B7F36000F628F /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		FCB02E812A548FD000C3EACC /* RoamX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RoamX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCB02E842A548FD000C3EACC /* RoamXApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoamXApp.swift; sourceTree = "<group>"; };
 		FCB02E862A548FD000C3EACC /* DemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoView.swift; sourceTree = "<group>"; };
@@ -83,6 +85,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FCA65A232A5B7F06000F628F /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				FCA65A242A5B7F36000F628F /* RootView.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
 		FCB02E782A548FD000C3EACC = {
 			isa = PBXGroup;
 			children = (
@@ -174,6 +184,7 @@
 			children = (
 				FCD1183D2A565BD300133AE6 /* Components */,
 				FCD1183E2A565BDB00133AE6 /* Launch */,
+				FCA65A232A5B7F06000F628F /* Root */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -339,6 +350,7 @@
 				FCD118492A56ED0B00133AE6 /* LaunchView.swift in Sources */,
 				FCB02E852A548FD000C3EACC /* RoamXApp.swift in Sources */,
 				FCD118432A565CA600133AE6 /* LaunchScreenState.swift in Sources */,
+				FCA65A252A5B7F36000F628F /* RootView.swift in Sources */,
 				FCD118452A565CD900133AE6 /* LaunchScreenStateManager.swift in Sources */,
 				FCB02EA32A54A67F00C3EACC /* Color+RoamX.swift in Sources */,
 			);

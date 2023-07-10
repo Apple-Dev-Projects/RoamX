@@ -10,9 +10,40 @@ import SwiftUI
 struct RootView: View {
     @EnvironmentObject private var launchScreenManager: LaunchScreenStateManager
     
+    @State private var currentTab: RootViewTabs = .home
+    
     var body: some View {
-        VStack {
-            Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        TabView(selection: $currentTab) {
+            Text("\(RootViewTabs.home.name) Tab")
+                .tabItem {
+                    Text(RootViewTabs.home.name)
+                    RootViewTabs.home.tabIcon
+                }
+                .tag(RootViewTabs.home)
+            Text("\(RootViewTabs.trips.name) Tab")
+                .tabItem {
+                    Text(RootViewTabs.trips.name)
+                    RootViewTabs.trips.tabIcon
+                }
+                .tag(RootViewTabs.trips)
+            Text("\(RootViewTabs.roam.name) Tab")
+                .tabItem {
+                    Text(RootViewTabs.roam.name)
+                    RootViewTabs.roam.tabIcon
+                }
+                .tag(RootViewTabs.roam)
+            Text("\(RootViewTabs.notifications.name) Tab")
+                .tabItem {
+                    Text(RootViewTabs.notifications.name)
+                    RootViewTabs.notifications.tabIcon
+                }
+                .tag(RootViewTabs.notifications)
+            Text("\(RootViewTabs.profile.name) Tab")
+                .tabItem {
+                    Text(RootViewTabs.profile.name)
+                    RootViewTabs.profile.tabIcon
+                }
+                .tag(RootViewTabs.profile)
         }
         .task {
             try? await getDataFromApi()

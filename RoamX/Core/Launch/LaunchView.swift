@@ -12,11 +12,10 @@ struct LaunchView: View {
     
     @State private var taglineIndex: Int = 0
     @State private var tagline: [String] = []
-    @State private var fadeoutAnimation = false
     
     private let taglineText: [String] = ["Plan.", "Roam.", "Explore."]
     private let animationTimer = Timer
-        .publish(every: 1.5, on: .main, in: .common)
+        .publish(every: 1.25, on: .main, in: .common)
         .autoconnect()
     
     var body: some View {
@@ -24,9 +23,16 @@ struct LaunchView: View {
             BackgroundView
             LogoView
             ZStack {
-                TaglineView
+                VStack(spacing: 15) {
+                    if (launchScreenManager.animationsFinished
+                    &&  !launchScreenManager.canDismiss) {
+                        ProgressView()
+                            .tint(Color.launch.progress)
+                    }
+                    TaglineView
+                }
             }
-            .offset(y: 100)
+            .offset(y: 120)
         }
         .onAppear {
             launchScreenManager.advanceState()
@@ -35,7 +41,6 @@ struct LaunchView: View {
             updateTaglineAnimation()
             checkCanDismiss()
         }
-        .opacity(fadeoutAnimation ? 0 : 1)
     }
     
     @ViewBuilder
@@ -60,14 +65,14 @@ struct LaunchView: View {
                     .font(.title).bold().fontDesign(.rounded)
                     .foregroundColor(Color.launch.accent)
                     .shadow(radius: 2, x: 5, y: 4)
-                    .transition(.opacity.animation(.linear))
+                    .transition(.opacity.animation(.easeIn))
             }
         }
     }
     
     private func updateTaglineAnimation() {
         if (taglineIndex < taglineText.count) {
-            withAnimation(.spring(response: 1, dampingFraction: 0.4, blendDuration: 0.3)) {
+            withAnimation(.spring(response: 1, dampingFraction: 0.5, blendDuration: 0.3)) {
                 tagline.append(taglineText[taglineIndex])
             }
             taglineIndex += 1

@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		FCA65A252A5B7F36000F628F /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA65A242A5B7F36000F628F /* RootView.swift */; };
 		FCA65A272A5C61C3000F628F /* RootViewTabs.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA65A262A5C61C3000F628F /* RootViewTabs.swift */; };
+		FCA65A292A626899000F628F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FCA65A282A626899000F628F /* GoogleService-Info.plist */; };
+		FCA65A2C2A626A7F000F628F /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = FCA65A2B2A626A7F000F628F /* FirebaseAnalytics */; };
+		FCA65A2E2A626A7F000F628F /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = FCA65A2D2A626A7F000F628F /* FirebaseAnalyticsSwift */; };
 		FCB02E852A548FD000C3EACC /* RoamXApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB02E842A548FD000C3EACC /* RoamXApp.swift */; };
 		FCB02E872A548FD000C3EACC /* DemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB02E862A548FD000C3EACC /* DemoView.swift */; };
 		FCB02E892A548FD300C3EACC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCB02E882A548FD300C3EACC /* Assets.xcassets */; };
@@ -44,6 +47,7 @@
 /* Begin PBXFileReference section */
 		FCA65A242A5B7F36000F628F /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		FCA65A262A5C61C3000F628F /* RootViewTabs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewTabs.swift; sourceTree = "<group>"; };
+		FCA65A282A626899000F628F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FCB02E812A548FD000C3EACC /* RoamX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RoamX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCB02E842A548FD000C3EACC /* RoamXApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoamXApp.swift; sourceTree = "<group>"; };
 		FCB02E862A548FD000C3EACC /* DemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoView.swift; sourceTree = "<group>"; };
@@ -74,6 +78,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCA65A2E2A626A7F000F628F /* FirebaseAnalyticsSwift in Frameworks */,
+				FCA65A2C2A626A7F000F628F /* FirebaseAnalytics in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,6 +131,7 @@
 				FCD1183C2A565B6D00133AE6 /* Core */,
 				FCD1184A2A578C3800133AE6 /* Home */,
 				FCB02E882A548FD300C3EACC /* Assets.xcassets */,
+				FCA65A282A626899000F628F /* GoogleService-Info.plist */,
 				FCB02EA12A54A64C00C3EACC /* Demo */,
 				FCB02E8A2A548FD300C3EACC /* Preview Content */,
 			);
@@ -254,6 +261,10 @@
 			dependencies = (
 			);
 			name = RoamX;
+			packageProductDependencies = (
+				FCA65A2B2A626A7F000F628F /* FirebaseAnalytics */,
+				FCA65A2D2A626A7F000F628F /* FirebaseAnalyticsSwift */,
+			);
 			productName = RoamX;
 			productReference = FCB02E812A548FD000C3EACC /* RoamX.app */;
 			productType = "com.apple.product-type.application";
@@ -304,6 +315,9 @@
 				Base,
 			);
 			mainGroup = FCB02E782A548FD000C3EACC;
+			packageReferences = (
+				FCA65A2A2A626A7F000F628F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = FCB02E822A548FD000C3EACC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -332,6 +346,7 @@
 				FCB02ED52A54C5F000C3EACC /* LogoFillMonochromeDark.svg in Resources */,
 				FCB02EDA2A54C5F000C3EACC /* LogoFillMonochromeLight.svg in Resources */,
 				FCB02ED82A54C5F000C3EACC /* LogoMonochromeDark.svg in Resources */,
+				FCA65A292A626899000F628F /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -514,7 +529,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.RoamX;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cgraham.RoamX;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -543,7 +558,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.RoamX;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cgraham.RoamX;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -616,6 +631,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FCA65A2A2A626A7F000F628F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = exactVersion;
+				version = 10.12.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FCA65A2B2A626A7F000F628F /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FCA65A2A2A626A7F000F628F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		FCA65A2D2A626A7F000F628F /* FirebaseAnalyticsSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FCA65A2A2A626A7F000F628F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FCB02E792A548FD000C3EACC /* Project object */;
 }

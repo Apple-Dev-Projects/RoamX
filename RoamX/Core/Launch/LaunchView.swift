@@ -60,8 +60,8 @@ struct LaunchView: View {
     @ViewBuilder
     private var TaglineView: some View {
         HStack {
-            ForEach(tagline.indices, id: \.self) { index in
-                Text(tagline[index])
+            ForEach(tagline, id: \.self) { phrase in
+                Text(phrase)
                     .font(.title).bold().fontDesign(.rounded)
                     .foregroundColor(Color.launch.accent)
                     .shadow(radius: 2, x: 5, y: 4)

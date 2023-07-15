@@ -38,12 +38,10 @@ final class LaunchScreenStateManager: ObservableObject {
     }
     
     func dismiss() {
-        Task {
-            try? await Task.sleep(for: Duration.seconds(1))
-        }
-        
-        withAnimation(.easeOut) {
-            state = .finished
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+            withAnimation(.easeOut) {
+                self.state = .finished
+            }
         }
     }
 }

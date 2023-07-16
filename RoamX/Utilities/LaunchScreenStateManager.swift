@@ -8,6 +8,12 @@
 import Foundation
 import SwiftUI
 
+enum LaunchScreenState {
+    case initialized
+    case taglineAnimation
+    case finished
+}
+
 @MainActor
 final class LaunchScreenStateManager: ObservableObject {
     @Published private(set) var state: LaunchScreenState = .initialized

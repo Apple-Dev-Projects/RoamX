@@ -28,7 +28,6 @@
 		FCB02ED92A54C5F000C3EACC /* LogoFillGrayscaleBlack.svg in Resources */ = {isa = PBXBuildFile; fileRef = FCB02ECF2A54C5EF00C3EACC /* LogoFillGrayscaleBlack.svg */; };
 		FCB02EDA2A54C5F000C3EACC /* LogoFillMonochromeLight.svg in Resources */ = {isa = PBXBuildFile; fileRef = FCB02ED02A54C5EF00C3EACC /* LogoFillMonochromeLight.svg */; };
 		FCB02EDB2A54C5F000C3EACC /* LogoGrayscaleBlack.svg in Resources */ = {isa = PBXBuildFile; fileRef = FCB02ED12A54C5EF00C3EACC /* LogoGrayscaleBlack.svg */; };
-		FCD118432A565CA600133AE6 /* LaunchScreenState.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD118422A565CA600133AE6 /* LaunchScreenState.swift */; };
 		FCD118452A565CD900133AE6 /* LaunchScreenStateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD118442A565CD900133AE6 /* LaunchScreenStateManager.swift */; };
 		FCD118472A56E51400133AE6 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCD118462A56E51400133AE6 /* Launch Screen.storyboard */; };
 		FCD118492A56ED0B00133AE6 /* LaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD118482A56ED0B00133AE6 /* LaunchView.swift */; };
@@ -67,7 +66,6 @@
 		FCB02ECF2A54C5EF00C3EACC /* LogoFillGrayscaleBlack.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LogoFillGrayscaleBlack.svg; sourceTree = "<group>"; };
 		FCB02ED02A54C5EF00C3EACC /* LogoFillMonochromeLight.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LogoFillMonochromeLight.svg; sourceTree = "<group>"; };
 		FCB02ED12A54C5EF00C3EACC /* LogoGrayscaleBlack.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = LogoGrayscaleBlack.svg; sourceTree = "<group>"; };
-		FCD118422A565CA600133AE6 /* LaunchScreenState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenState.swift; sourceTree = "<group>"; };
 		FCD118442A565CD900133AE6 /* LaunchScreenStateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenStateManager.swift; sourceTree = "<group>"; };
 		FCD118462A56E51400133AE6 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		FCD118482A56ED0B00133AE6 /* LaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchView.swift; sourceTree = "<group>"; };
@@ -129,7 +127,6 @@
 				FCD118412A565C2700133AE6 /* Services */,
 				FCB02EA02A54A64100C3EACC /* Models */,
 				FCD1183C2A565B6D00133AE6 /* Core */,
-				FCD1184A2A578C3800133AE6 /* Home */,
 				FCB02E882A548FD300C3EACC /* Assets.xcassets */,
 				FCA65A282A626899000F628F /* GoogleService-Info.plist */,
 				FCB02EA12A54A64C00C3EACC /* Demo */,
@@ -158,7 +155,6 @@
 		FCB02EA02A54A64100C3EACC /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				FCD118422A565CA600133AE6 /* LaunchScreenState.swift */,
 				FCA65A262A5C61C3000F628F /* RootViewTabs.swift */,
 			);
 			path = Models;
@@ -236,13 +232,6 @@
 			children = (
 			);
 			path = Services;
-			sourceTree = "<group>";
-		};
-		FCD1184A2A578C3800133AE6 /* Home */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -367,7 +356,6 @@
 				FCB02E872A548FD000C3EACC /* DemoView.swift in Sources */,
 				FCD118492A56ED0B00133AE6 /* LaunchView.swift in Sources */,
 				FCB02E852A548FD000C3EACC /* RoamXApp.swift in Sources */,
-				FCD118432A565CA600133AE6 /* LaunchScreenState.swift in Sources */,
 				FCA65A252A5B7F36000F628F /* RootView.swift in Sources */,
 				FCD118452A565CD900133AE6 /* LaunchScreenStateManager.swift in Sources */,
 				FCA65A272A5C61C3000F628F /* RootViewTabs.swift in Sources */,

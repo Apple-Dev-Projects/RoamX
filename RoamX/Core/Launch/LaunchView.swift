@@ -24,13 +24,13 @@ struct LaunchView: View {
             LogoView
             ZStack {
                 VStack(spacing: 15) {
-                    if (launchScreenManager.animationsFinished
-                    &&  !launchScreenManager.canDismiss) {
+                    if launchScreenManager.showLoading {
                         ProgressView()
                             .tint(Color.launch.progress)
                     }
                     TaglineView
                 }
+                .animation(.easeInOut, value: launchScreenManager.showLoading)
             }
             .offset(y: 120)
         }
@@ -65,25 +65,26 @@ struct LaunchView: View {
                     .font(.title).bold().fontDesign(.rounded)
                     .foregroundColor(Color.launch.accent)
                     .shadow(radius: 2, x: 5, y: 4)
-                    .transition(.opacity.animation(.easeIn))
+                    .transition(.opacity.animation(.easeInOut))
             }
+            .animation(
+                .spring(response: 1, dampingFraction: 0.5, blendDuration: 0.3),
+                value: tagline
+            )
         }
     }
     
     private func updateTaglineAnimation() {
-        if (taglineIndex < taglineText.count) {
-            withAnimation(.spring(response: 1, dampingFraction: 0.5, blendDuration: 0.3)) {
-                tagline.append(taglineText[taglineIndex])
-            }
+        if taglineIndex < taglineText.count {
+            tagline.append(taglineText[taglineIndex])
             taglineIndex += 1
-        } else if (taglineIndex == taglineText.count) {
+        } else if taglineIndex == taglineText.count {
             launchScreenManager.advanceState()
         }
     }
     
     private func checkCanDismiss() {
-        if (launchScreenManager.canDismiss)
-        {
+        if launchScreenManager.canDismiss {
             launchScreenManager.dismiss()
         }
     }

@@ -18,36 +18,34 @@ enum LaunchScreenState {
 final class LaunchScreenStateManager: ObservableObject {
     @Published private(set) var state: LaunchScreenState = .initialized
     @Published private(set) var animationsFinished = false
-    @Published private var readyToDismiss = false
+    @Published private(set) var readyToDismiss = false
+    
+    var showLoading: Bool {
+        animationsFinished && !readyToDismiss
+    }
     
     var canDismiss: Bool {
         animationsFinished && readyToDismiss
     }
     
     func advanceState() {
-        withAnimation(.easeInOut) {
-            switch state {
-            case .initialized:
-                state = .taglineAnimation
-            case .taglineAnimation:
-                animationsFinished = true
-            case .finished:
-                break
-            }
+        switch state {
+        case .initialized:
+            state = .taglineAnimation
+        case .taglineAnimation:
+            animationsFinished = true
+        case .finished:
+            break
         }
     }
     
     func setReadyToDismis() {
-        withAnimation(.easeOut) {
-            readyToDismiss = true
-        }
+        readyToDismiss = true
     }
     
     func dismiss() {
         DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-            withAnimation(.easeOut) {
-                self.state = .finished
-            }
+            self.state = .finished
         }
     }
 }

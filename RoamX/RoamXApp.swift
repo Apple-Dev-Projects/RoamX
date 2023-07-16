@@ -22,10 +22,9 @@ struct RoamXApp: App {
                 RootView()
                 
                 VStack {
-                    if (launchScreenManager.state != .finished) {
+                    if launchScreenManager.state != .finished {
                         LaunchView()
-                            .transition(.opacity
-                                .animation(.easeOut(duration: 0.75)))
+                            .transition(.opacity.animation(.easeOut(duration: 0.75)))
                     }
                 }
             }
